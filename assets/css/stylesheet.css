@@ -9,6 +9,7 @@ header.masthead .intro-text {
 
 .fa {
   color: #daecfd;
+  background-color: FEF1F4;
 }
 
 #services {
@@ -83,6 +84,48 @@ header.masthead .intro-text {
   color: #000000 !important;
 }
 
+@media (max-width: 667px) {
+  .zoom {
+    overflow: hidden;
+    padding-bottom: 75%;
+  }
+}
+
+@media (max-width: 667px) {
+  .masthead .zoomy {
+    /*width: 500%;*/
+    /*height: 100vh;*/
+    display: none;
+  }
+}
+
+@media (max-width: 667px) {
+  .masthead img {
+    width: 100%;
+    margin-top: 10px !important;
+  }
+}
+
+@media (max-width: 667px) {
+  .welcome {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 667px) {
+  #portfolio h1 {
+    color: #000000 !important;
+  }
+}
+
+@media (max-width: 994px) {
+  .nav {
+    background-color: rgba(218,236,253,0.68) !important;
+    padding: 6px;
+    padding-top: 0px;
+  }
+}
+
 #services h4 {
   font-family: 'Dancing Script';
   font-size: 24px;
@@ -97,10 +140,6 @@ header.masthead .intro-text {
 .social-buttons a:hover {
   transform: scale(1.2);
 }
-.rounded-circle{
-  margin-top: 16px;
-
-}
 
 .rounded-circle:hover {
   transform: scale(1.2);
@@ -113,32 +152,3 @@ header.masthead .intro-text {
   display: none;
 }
 
-@media (max-width: 667px) {
-  .zoom {
-    overflow: hidden;
-    padding-bottom: 75%;
-  }
-  .masthead .zoomy {
-    /*width: 500%;*/
-    /*height: 100vh;*/
-    display: none;
-  }
-  .masthead img {
-    width: 100%;
-    margin-top: 10px !important;
-  }
-  .welcome {
-    font-size: 36px;
-  }
-  #portfolio h1 {
-    color: #000000 !important;
-  }
-}
-
-@media (max-width: 994px) {
-  .nav {
-    background-color: rgba(218,236,253,0.68) !important;
-    padding: 6px;
-    padding-top: 0px;
-  }
-}
