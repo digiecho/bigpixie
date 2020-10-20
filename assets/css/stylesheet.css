@@ -79,7 +79,7 @@ header.masthead .intro-text {
   color: #daecfd !important;
 }
 
-.btn {
+.btn-primary {
   border-color: #fef1f4 !important;
   color: #000000 !important;
 }
@@ -102,13 +102,53 @@ header.masthead .intro-text {
 @media (max-width: 667px) {
   .masthead img {
     width: 100%;
-    margin-top: 0px !important;
+    margin-top: 10px !important;
   }
 }
 
 @media (max-width: 667px) {
   .welcome {
-    color: #000000;
+    font-size: 36px;
   }
+}
+
+@media (max-width: 667px) {
+  #portfolio h1 {
+    color: #000000 !important;
+  }
+}
+
+@media (max-width: 994px) {
+  .nav {
+    background-color: rgba(218,236,253,0.68) !important;
+    padding: 6px;
+    padding-top: 0px;
+  }
+}
+
+#services h4 {
+  font-family: 'Dancing Script';
+  font-size: 24px;
+}
+
+.list-inline-item a:hover {
+  color: rgb(254,241,244) !important;
+  background-color: rgb(218,236,253);
+  border-color: rgb(254,241,244);
+}
+
+.social-buttons a:hover {
+  transform: scale(1.2);
+}
+
+.rounded-circle:hover {
+  transform: scale(1.2);
+  color: rgb(254,241,244) !important;
+  background-color: rgb(218,236,253);
+  border-color: rgb(254,241,244);
+}
+
+.modal div::-webkit-scrollbar {
+  display: none;
 }
 
