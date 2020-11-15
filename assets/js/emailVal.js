@@ -79,5 +79,6 @@
           else {
             submitted=true;
             return true;
+            alert("Form Submitted");
           }
         }
