@@ -73,7 +73,7 @@
     <header class="masthead" style="min-height: 100vh;animation: breath 4s linear infinite;background: linear-gradient(0deg, rgb(218,236,253), rgba(255,255,255,0.14) 100%);opacity: 1;padding-bottom: 25px;"><img class="zoomy" src="assets/img/header-bg.jpg" style="background: radial-gradient(black 23%, rgb(53,53,53) 164%, rgb(255,255,255) 164%);">
         <div class="container">
             <div class="align-content-center intro-text"><img class="img-fluid flex-shrink-1 logo" src="assets/img/LogoPixieDust.svg" width="55%" style="min-height: 80%;max-height: 50%;margin-bottom: 69px;margin-top: 50px;" loading="lazy">
-                <div class="intro-lead-in" style="font-family: 'Dancing Script', cursive;margin-bottom: 26px;"><span class="welcome" style="margin-bottom: 16px;font-style: normal;font-weight: bold;">Welcome&nbsp;</span></div><a class="btn btn-primary text-capitalize btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="background: rgb(223,234,247);color: rgb(0,0,0);font-size: 24px;font-family: 'Dancing Script', cursive;border-radius: 16px;">Tell me more</a>
+                <div class="intro-lead-in" style="font-family: 'Dancing Script', cursive;margin-bottom: 26px;"><span class="welcome" style="margin-bottom: 16px;font-style: normal;font-weight: bold;">Welcome&nbsp;</span></div><a class="btn text-capitalize text-uppercase js-scroll-trigger" role="button" href="#services" style="background: rgb(223,234,247);color: rgb(0,0,0);font-size: 24px;font-family: 'Dancing Script', cursive;border-radius: 16px;">Tell me more</a>
                 <ul
                     data-aos="fade" data-aos-duration="500" data-aos-delay="100" class="list-inline social-buttons" style="margin-bottom: 26px;margin-top: 26px;">
                     <li class="list-inline-item breath"><a href="tel:+447387187385" style="background: rgb(254,241,244);"><i class="fa fa-phone"></i></a></li>
@@ -133,7 +133,7 @@
                 </div>
                 <div class="col-md-4 item" style="padding-top: 15px;background: rgba(254,241,244,0.81);border-radius: 16px;"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary" style="color: rgba(254,209,54,0);"></i><i class="typcn typcn-weather-windy-cloudy border rounded-circle fa-stack-1x fa-inverse" style="background: #daecfd;color: rgb(254,241,244);font-weight: 900;"></i></span>
                     <h4
-                        class="section-heading" style="margin-top: 8px;">Fogging</h4><button class="btn btn-primary" type="button" style="background: rgb(218,236,253);color: rgb(254,241,244);margin-top: 24px;margin-bottom: 16px;" role="button" link="#foggingModal-1" data-target="#foggingModal-1" data-toggle="modal">More</button></div>
+                        class="section-heading" style="margin-top: 8px;">Fogging</h4><button class="btn " type="button" style="background: rgb(218,236,253);color: rgb(254,241,244);margin-top: 24px;margin-bottom: 16px;" role="button" link="#foggingModal-1" data-target="#foggingModal-1" data-toggle="modal">More</button></div>
                 <div
                     class="col-md-4 item" style="padding-top: 15px;background: rgba(254,241,244,0.81);border-radius: 16px;"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary" style="color: rgba(254,209,54,0);"></i><i class="fa fa-cart-plus border rounded-circle fa-stack-1x fa-inverse" style="background: #daecfd;color: rgb(254,241,244);font-weight: 900;"></i></span>
                     <h4
@@ -182,9 +182,14 @@
                 <div class="clearfix"></div>
             </div>
         </div>
-        <h2 class="bluetxt"><strong>What our customers say</strong></h2>
+        <div class="h4pad">
+        <h2 class="bluetxt text-center"><strong>What our customers say</strong></h2>
+        </div>
         <br>
-        <div id="myCarousel" class="carousel slide text-center" data-ride="carousel" data-touch="true">
+        <script>$('.carousel').carousel({
+            interval: 200
+        })</script>
+        <div id="myCarousel" class="carousel bluetxt text-center" data-ride="carousel" data-touch="true" interval="200">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -192,16 +197,16 @@
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
             <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <h4>"Our toilets have never been so clean"<br>
+            <div class="carousel-inner " role="listbox">
+                <div class="carousel-item active">
+                    <h4 class="text-center">"Our toilets have never been so clean"<br>
                         <span>Miche Boe</span></h4>
                 </div>
-                <div class="item">
+                <div class="carousel-item">
                     <h4>"love them pixies"<br>
                         <span>Jay Money</span></h4>
                 </div>
-                <div class="item">
+                <div class="carousel-item">
                     <h4>"Could not be more happy with this company, would recommend to anyone"<br>
                         <span>Billy Ring</span></h4>
                 </div>
@@ -214,6 +219,8 @@
                 class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
         </div>
     </section>
+
+
     <section id="about" style="padding-bottom: 0px;background: center / cover no-repeat, #daecfd;">
         <div class="container">
             <div class="row">
@@ -340,7 +347,7 @@
                                 <div
                                     class="form-group"><input class="form-control" type="email" id="email" name="email" placeholder="Your Email *" required="" style="background: rgb(254,241,244);border-radius: 16px;"><small class="form-text text-danger help-block lead"></small></div>
                             <div
-                                class="form-group"><input class="form-control" type="tel" id="phone" placeholder="Your Phone *" required="" style="background: rgb(254,241,244);border-radius: 16px;"><small class="form-text text-danger help-block lead"></small></div>
+                                class="form-group"><input class="form-control" type="tel" id="phone" name="phone" placeholder="Your Phone *" required="" style="background: rgb(254,241,244);border-radius: 16px;"><small class="form-text text-danger help-block lead"></small></div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group"><textarea class="form-control" type="text" id="comments" name="comments" placeholder="Your Message *" required="" style="background: rgb(254,241,244);font-family: 'Dancing Script', cursive;border-radius: 16px;"></textarea><small class="form-text text-danger help-block lead"></small></div>
@@ -349,7 +356,7 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="col-lg-12 text-center">
-                    <div id="success"></div><button class="btn btn-primary text-capitalize btn-xl text-uppercase" id="sendMessageButton" type="submit" style="background: rgb(254,241,244);color: rgb(0,0,0);font-family: 'Dancing Script', cursive;font-weight: bold;font-size: 24px;border-radius: 16px;">Send Message</button></div>
+                    <div id="success"></div><button class="btn  text-capitalize text-uppercase" id="sendMessageButton" type="submit" style="background: rgb(254,241,244);color: rgb(0,0,0);font-family: 'Dancing Script', cursive;font-weight: bold;font-size: 24px;border-radius: 16px;">Send Message</button></div>
             </div>
             </form>
         </div>
@@ -781,7 +788,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="assets/js/agency.js"></script>
     <script src="assets/js/scrolly.js"></script>
-    <script src="assets/js/slider.js"></script>
     <script src="assets/js/emailVal.js"></script>
 </body>
 
