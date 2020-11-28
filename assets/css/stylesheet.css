@@ -18,6 +18,21 @@ header.masthead .intro-text {
   background-repeat: no-repeat !important;
   background-size: cover !important;
 }
+.flex-grow-1 {
+  -ms-flex-positive: 1!important;
+  flex-grow: 1!important;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+
+
 
 @keyframes breath {
   0% {
@@ -128,6 +143,25 @@ H4, H2{
     padding: 6px;
     padding-top: 0px;
   }
+
+}
+@media (max-width: 994px) {
+  .g {
+    overflow-x: auto;
+    padding-left: 15px;
+  }
+  #services porcol{
+    padding-top: -15px !important;
+    padding-right: -15px !important;
+    padding-left: -15px !important;
+    padding-bottom: -15px !important;
+  }
+}
+porcol{
+  padding-top: 0px !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 #services h4 {
